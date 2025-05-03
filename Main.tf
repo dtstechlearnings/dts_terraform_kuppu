@@ -4,6 +4,6 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
   ami           = var.ec2_ami_id // Replace with a valid AMI ID
   lifecycle {
-     prevent_destroy = true
+     prevent_destroy = false
   }
 }
